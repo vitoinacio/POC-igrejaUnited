@@ -33,7 +33,7 @@ export const socialLinks: SocialLink[] = [
 const Footer = () => {
   return (
     <footer className="mt-10 bg-united-secondary border-t border-gray-200">
-      <div className="px-30 py-10 max-w-6xl mx-auto sm:px-6 lg:px-8  grid md:grid-cols-4 gap-8 text-xs">
+      <div className="px-30 max-sm:px-10 py-10 max-w-6xl mx-auto sm:px-6 lg:px-8  grid md:grid-cols-4 gap-8 text-xs">
         <div className="flex flex-col gap-3">
           <div className="flex items-center gap-3">
             <Image
@@ -42,6 +42,7 @@ const Footer = () => {
               width={40}
               height={40}
               className="rounded-full"
+              sizes="100vw"
             />
             <div className="tracking-[0.18em]">
               <p className="text-united-muted text-xs">IGREJA</p>
@@ -122,7 +123,7 @@ const Footer = () => {
             reservados.
           </span>
 
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3 max-sm:flex-col">
             <span>
               Design & SPA feitos por{" "}
               <a
@@ -135,7 +136,7 @@ const Footer = () => {
             </span>
             <span className="hidden sm:inline">|</span>
             <a
-              href="./login_area_interna.html"
+              href="../../../../login_area_interna.html"
               className="hover:text-united-primary transition-colors duration-300"
             >
               Login (Líderes)
