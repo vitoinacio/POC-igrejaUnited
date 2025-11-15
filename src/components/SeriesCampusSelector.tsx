@@ -24,7 +24,7 @@ const SeriesCampusSelector = ({
   handleNext,
 }: SeriesCampusSelectorProps) => {
   return (
-    <div className="flex items-center justify-center gap-4">
+    <div className="flex items-center justify-center gap-4 max-[500px]:gap-0">
       <Button
         variant="ghost"
         className="rounded-full h-10 w-10 cursor-pointer"
@@ -34,7 +34,7 @@ const SeriesCampusSelector = ({
         <ChevronLeft />
       </Button>
 
-      <div className="overflow-hidden w-[260px]">
+      <div className="overflow-hidden w-[260px] max-[500px]:w-[105px]">
         <motion.div
           key={activeIndex}
           initial={{ x: direction * 40 }}
@@ -42,15 +42,15 @@ const SeriesCampusSelector = ({
           transition={{ type: "spring", stiffness: 260, damping: 22 }}
           className="flex items-center justify-center gap-3"
         >
-          <p className="text-xs text-united-muted opacity-70 min-w-[70px] text-right shrink-0">
+          <p className="text-xs text-united-muted opacity-70 min-w-[70px] max-[500px]:text-[8px] text-right shrink-0">
             {campuses[prevIndex].name}
           </p>
 
-          <p className="min-w-[120px] text-center shrink-0 scale-110 mb-1 font-bold text-united-primary text-base">
+          <p className="min-w-[120px] text-center shrink-0 scale-110 mb-1 font-bold text-united-primary text-base max-[500px]:text-[8px]">
             {campuses[activeIndex].name}
           </p>
 
-          <p className="text-xs text-united-muted opacity-70 min-w-[70px] text-left shrink-0">
+          <p className="text-xs text-united-muted opacity-70 min-w-[70px] text-left shrink-0 max-[500px]:text-[8px]">
             {campuses[nextIndex].name}
           </p>
         </motion.div>

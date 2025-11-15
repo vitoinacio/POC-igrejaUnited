@@ -35,7 +35,7 @@ const HomeSeriesSection = ({
             séries da casa
           </CardTitle>
           <CardDescription>
-            <h2 className="font-display text-xl sm:text-2xl text-united-text font-medium">
+            <h2 className="font-display text-xl sm:text-2xl text-united-text font-medium max-[350px]:text-sm">
               Domingos &amp; Quintas
             </h2>
             <SeriesCampusSelector

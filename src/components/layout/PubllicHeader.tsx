@@ -53,7 +53,7 @@ const PublicHeader = () => {
           })}
         </ul>
       </nav>
-      <div>
+      <div className="min-[900px]:hidden">
         <Sheet>
           <SheetTrigger asChild>
             <Button
