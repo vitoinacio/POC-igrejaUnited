@@ -24,16 +24,18 @@ export const campuses: Campus[] = [
       { day: "quinta", times: ["20h"] },
       { day: "domingo", times: ["10h", "18h"] },
     ],
-    series: {
-      quinta: {
+    series: [
+       {
+        day: "quinta",
         title: "Crentes Carnais",
         banner: "/banner.jpg",
       },
-      domingo: {
+      {
+        day: "domingo",
         title: "Escola de Oração",
         banner: "/banner2.jpg",
       },
-    },
+    ],
     events: [
       {
         id: "tijuca-youth-2025-12-10",
@@ -104,16 +106,18 @@ export const campuses: Campus[] = [
       { day: "quinta", times: ["20h"] },
       { day: "domingo", times: ["9h", "11h", "18h"] },
     ],
-    series: {
-      quinta: {
+    series: [
+       {
+        day: "quinta",
         title: "Reino Inabalável",
-        banner: "/banner.jpeg",
+        banner: "/banner.jpg",
       },
-      domingo: {
+      {
+        day: "domingo",
         title: "Vida em Comunhão",
         banner: "/banner2.jpg",
       },
-    },
+    ],
     events: [
       {
         id: "campogrande-familias-2025-07-12",
@@ -184,16 +188,18 @@ export const campuses: Campus[] = [
       { day: "quinta", times: ["20h"] },
       { day: "domingo", times: ["9h30", "18h30"] },
     ],
-    series: {
-      quinta: {
+    series: [
+       {
+        day: "quinta",
         title: "Identidade em Cristo",
-        banner: "/banner.jpeg",
+        banner: "/banner.jpg",
       },
-      domingo: {
+      {
+        day: "domingo",
         title: "Casa de Milagres",
         banner: "/banner2.jpg",
       },
-    },
+    ],
     events: [
       {
         id: "caxias-mulheres-2025-08-17",
@@ -264,16 +270,18 @@ export const campuses: Campus[] = [
       { day: "quinta", times: ["20h"] },
       { day: "domingo", times: ["10h", "18h"] },
     ],
-    series: {
-      quinta: {
+    series: [
+       {
+        day: "quinta",
         title: "Graça que Transforma",
-        banner: "/banner.jpeg",
+        banner: "/banner.jpg",
       },
-      domingo: {
+      {
+        day: "domingo",
         title: "Família no Altar",
         banner: "/banner2.jpg",
       },
-    },
+    ],
     events: [
       {
         id: "jacarepagua-conferencia-2025-09-14",
@@ -346,16 +354,18 @@ export const campuses: Campus[] = [
       { day: "quinta", times: ["20h"] },
       { day: "domingo", times: ["9h", "18h"] },
     ],
-    series: {
-      quinta: {
+    series: [
+       {
+        day: "quinta",
         title: "Chamados para Servir",
-        banner: "/banner.jpeg",
+        banner: "/banner.jpg",
       },
-      domingo: {
+      {
+        day: "domingo",
         title: "Jesus no Centro",
         banner: "/banner2.jpg",
       },
-    },
+    ],
     events: [
       {
         id: "viladapenha-elas-2025-06-08",
@@ -426,16 +436,18 @@ export const campuses: Campus[] = [
       { day: "quinta", times: ["20h"] },
       { day: "domingo", times: ["10h", "18h"] },
     ],
-    series: {
-      quinta: {
+    series: [
+       {
+        day: "quinta",
         title: "Influência em São Paulo",
-        banner: "/banner.jpeg",
+        banner: "/banner.jpg",
       },
-      domingo: {
+      {
+        day: "domingo",
         title: "Cidade no Altar",
         banner: "/banner2.jpg",
       },
-    },
+    ],
     events: [
       {
         id: "saopaulo-business-2025-08-03",
@@ -506,16 +518,18 @@ export const campuses: Campus[] = [
       { day: "quinta", times: ["20h"] },
       { day: "domingo", times: ["10h", "19h"] },
     ],
-    series: {
-      quinta: {
+    series: [
+       {
+        day: "quinta",
         title: "Luz para a Cidade",
-        banner: "/banner.jpeg",
+        banner: "/banner.jpg",
       },
-      domingo: {
+      {
+        day: "domingo",
         title: "Amor que Alcança",
         banner: "/banner2.jpg",
       },
-    },
+    ],
     events: [
       {
         id: "zonasul-adoracao-2025-05-30",
@@ -589,16 +603,18 @@ export const campuses: Campus[] = [
       { day: "quinta", times: ["20h"] },
       { day: "domingo", times: ["9h30", "18h30"] },
     ],
-    series: {
-      quinta: {
+    series: [
+       {
+        day: "quinta",
         title: "Esperança para Baixada",
-        banner: "/banner.jpeg",
+        banner: "/banner.jpg",
       },
-      domingo: {
+      {
+        day: "domingo",
         title: "Casa de Oração",
         banner: "/banner2.jpg",
       },
-    },
+    ],
     events: [
       {
         id: "meriti-conexao-2025-06-21",
@@ -671,16 +687,18 @@ export const campuses: Campus[] = [
       { day: "quinta", times: ["20h"] },
       { day: "domingo", times: ["9h", "18h"] },
     ],
-    series: {
-      quinta: {
+    series: [
+       {
+        day: "quinta",
         title: "Firmes na Esperança",
-        banner: "/banner.jpeg",
+        banner: "/banner.jpg",
       },
-      domingo: {
+      {
+        day: "domingo",
         title: "Graça para Todos",
         banner: "/banner2.jpg",
       },
-    },
+    ],
     events: [
       {
         id: "saogoncalo-evangelismo-2025-07-05",
@@ -751,16 +769,18 @@ export const campuses: Campus[] = [
       { day: "quinta", times: ["20h"] },
       { day: "domingo", times: ["10h", "18h30"] },
     ],
-    series: {
-      quinta: {
+    series: [
+       {
+        day: "quinta",
         title: "Influência no Mercado",
-        banner: "/banner.jpeg",
+        banner: "/banner.jpg",
       },
-      domingo: {
+      {
+        day: "domingo",
         title: "Famílias Saudáveis",
         banner: "/banner2.jpg",
       },
-    },
+    ],
     events: [
       {
         id: "barra-business-2025-09-01",
@@ -834,16 +854,18 @@ export const campuses: Campus[] = [
       { day: "quinta", times: ["20h"] },
       { day: "domingo", times: ["9h", "18h"] },
     ],
-    series: {
-      quinta: {
+    series: [
+       {
+        day: "quinta",
         title: "Campos em Chamas",
-        banner: "/banner.jpeg",
+        banner: "/banner.jpg",
       },
-      domingo: {
+      {
+        day: "domingo",
         title: "Colheita em Campos",
         banner: "/banner2.jpg",
       },
-    },
+    ],
     events: [
       {
         id: "campos-conferencia-2025-08-09",

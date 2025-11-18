@@ -13,20 +13,28 @@ import SeriesCarrosel from "../components/SeriesCarrosel";
 const HomeSeriesSection = () => {
   return (
     <section>
-      <Card>
+      <Card className="overflow-hidden">
         <CardHeader>
           <CardTitle className="text-xs tracking-[0.27em] uppercase text-united-muted">
             séries da casa
           </CardTitle>
-          <CardDescription>
+
+          <div className="flex flex-col gap-2 mt-2">
             <h2 className="font-display text-xl sm:text-2xl text-united-text font-medium max-[350px]:text-sm">
-              Domingos &amp; Quintas
+              Domingos & Quintas
             </h2>
-            <SeriesCampusSelector />
-            <SeriesCarrosel />
-          </CardDescription>
+
+            <CardDescription>
+              <div className="pt-2">
+                <SeriesCampusSelector />
+              </div>
+            </CardDescription>
+          </div>
         </CardHeader>
-        <CardContent></CardContent>
+
+        <CardContent className="p-0 sm:p-6">
+          <SeriesCarrosel />
+        </CardContent>
       </Card>
     </section>
   );

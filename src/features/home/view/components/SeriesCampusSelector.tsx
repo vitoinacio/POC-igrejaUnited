@@ -17,7 +17,7 @@ const SeriesCampusSelector = () => {
   } = useCampusSelection();
 
   return (
-    <div className="flex items-center gap-2 w-full max-w-full">
+    <div className="flex justify-center m-auto items-center gap-2 w-[80%] max-w-full">
       <Button
         variant="ghost"
         className="rounded-full h-8 w-8 sm:h-10 sm:w-10 cursor-pointer shrink-0"

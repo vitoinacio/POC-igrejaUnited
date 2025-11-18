@@ -13,14 +13,9 @@ export interface ServiceTime {
 }
 
 export interface SeriesByDay {
-  quinta?: {
-    title: string;
-    banner: string;
-  };
-  domingo?: {
-    title: string;
-    banner: string;
-  };
+  day: "domingo" | "quinta";
+  title: string;
+  banner: string;
 }
 
 export interface Pastor {
@@ -76,7 +71,7 @@ export interface Campus {
   uGroups: UGroup[];
 
   services: ServiceTime[];
-  series: SeriesByDay;
+  series: SeriesByDay[];
   events: Event[];
 
   volunteerSlots: CampusVolunteerSlot[];
