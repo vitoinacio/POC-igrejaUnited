@@ -1,8 +1,8 @@
 "use client";
 
+import { campuses } from "@/src/shared/models/campuses";
+import { Campus } from "@/src/types/campus/campus.types";
 import { useState } from "react";
-import { campuses } from "../models/campuses";
-import { Campus } from "../types/campus/campus.types";
 
 export type Direction = 1 | -1;
 

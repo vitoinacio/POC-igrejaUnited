@@ -1,9 +1,7 @@
 "use client";
 
 import { createContext, useContext } from "react";
-import useSelectedCampus, {
-  SelectedCampusState,
-} from "@/src/hooks/useSelectedCampus";
+import useSelectedCampus, { SelectedCampusState } from "../view-model/useSelectedCampus";
 
 const CampusSelectionContext = createContext<SelectedCampusState | null>(null);
 

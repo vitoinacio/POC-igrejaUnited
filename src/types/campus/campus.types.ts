@@ -13,8 +13,14 @@ export interface ServiceTime {
 }
 
 export interface SeriesByDay {
-  quinta?: string;
-  domingo?: string;
+  quinta?: {
+    title: string;
+    banner: string;
+  };
+  domingo?: {
+    title: string;
+    banner: string;
+  };
 }
 
 export interface Pastor {
@@ -50,7 +56,7 @@ export interface AnnouncementsLink {
 }
 
 export interface CampusVolunteerSlot {
-  roleId: string; 
+  roleId: string;
   open: boolean;
   spots: number;
 }
