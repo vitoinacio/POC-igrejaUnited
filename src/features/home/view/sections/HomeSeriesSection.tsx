@@ -6,7 +6,7 @@ import {
   CardDescription,
   CardHeader,
   CardTitle,
-} from "../../../../components/ui/card";
+} from "@/src/shared/components/ui/card";
 import SeriesCampusSelector from "../components/SeriesCampusSelector";
 import SeriesCarrosel from "../components/SeriesCarrosel";
 

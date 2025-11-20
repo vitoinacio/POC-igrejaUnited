@@ -1,7 +1,7 @@
 "use client";
 
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { Button } from "../../../../components/ui/button";
+import { Button } from "@/src/shared/components/ui/button";
 import { motion } from "framer-motion";
 import { campuses } from "../../../../shared/models/campuses";
 import { useCampusSelection } from "../../view-model/CampusSelectionContext";

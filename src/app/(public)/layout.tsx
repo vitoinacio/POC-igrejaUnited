@@ -1,5 +1,5 @@
-import Footer from "@/src/components/layout/Footer";
-import PublicHeader from "@/src/components/layout/PubllicHeader";
+import Footer from "@/src/shared/components/layout/Footer";
+import PublicHeader from "@/src/shared/components/layout/PubllicHeader";
 import { CampusSelectionProvider } from "@/src/features/home/view-model/CampusSelectionContext";
 import type { ReactNode } from "react";
 

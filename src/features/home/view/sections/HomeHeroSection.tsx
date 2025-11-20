@@ -1,10 +1,15 @@
 "use client";
 
-import { AspectRatio } from "@/src/components/ui/aspect-ratio";
-import { Button } from "@/src/components/ui/button";
+import { AspectRatio } from "@/src/shared/components/ui/aspect-ratio";
+import { Button } from "@/src/shared/components/ui/button";
 import Image from "next/image";
+import { useCampusSelection } from "../../view-model/CampusSelectionContext";
+import { getNextSeriesByDay } from "@/src/shared/utils/getNextSeriesByDay";
 
 const HomeHeroSection = () => {
+  const { currentCampus } = useCampusSelection();
+  const nextSeriesInfo = getNextSeriesByDay(currentCampus);
+
   return (
     <section className="grid md:grid-cols-2 gap-10 items-center animate-on-scroll py-12">
       <div className="space-y-6">
@@ -58,14 +63,15 @@ const HomeHeroSection = () => {
           />
         </AspectRatio>
         <div className="absolute -bottom-6 -left-4 bg-white/90 backdrop-blur-sm rounded-2xl px-4 py-3 shadow-soft border border-gray-100 text-xs">
-          <p className="font-semibold text-united-text"></p>
+          <p className="font-semibold text-united-text capitalize">
+            Próximo Culto {nextSeriesInfo?.displayDay}
+          </p>
           <p className="text-united-muted">
-            Série
-            <span
-              className="font-semibold text-united-primary"
-              id="infoSerie"
-            ></span>
-            às 10h & 18h
+            Série{" "}
+            <span className="font-semibold text-united-primary" id="infoSerie">
+              {nextSeriesInfo?.series?.title}
+            </span>{" "}
+            às {nextSeriesInfo?.times}
           </p>
         </div>
       </div>

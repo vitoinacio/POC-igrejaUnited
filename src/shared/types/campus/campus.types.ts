@@ -13,7 +13,7 @@ export interface ServiceTime {
 }
 
 export interface SeriesByDay {
-  day: "domingo" | "quinta";
+  day: Weekday;
   title: string;
   banner: string;
 }
