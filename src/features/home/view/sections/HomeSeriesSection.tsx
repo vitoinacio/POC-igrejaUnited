@@ -8,7 +8,7 @@ import {
   CardTitle,
 } from "@/src/shared/components/ui/card";
 import SeriesCampusSelector from "../components/SeriesCampusSelector";
-import SeriesCarrosel from "../components/SeriesCarrosel";
+import SeriesCard from "../components/SeriesCard";
 
 const HomeSeriesSection = () => {
   return (
@@ -32,8 +32,8 @@ const HomeSeriesSection = () => {
           </div>
         </CardHeader>
 
-        <CardContent className="p-0 sm:p-6">
-          <SeriesCarrosel />
+        <CardContent className="">
+          <SeriesCard />
         </CardContent>
       </Card>
     </section>
