@@ -1,4 +1,4 @@
-import { Campus } from "../../types/campus/campus.types";
+import { Campus } from "../types/campus/campus.types";
 
 export const campuses: Campus[] = [
   {
