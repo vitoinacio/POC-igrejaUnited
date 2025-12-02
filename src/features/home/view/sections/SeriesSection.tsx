@@ -10,7 +10,7 @@ import {
 import SeriesCampusSelector from "../components/SeriesCampusSelector";
 import SeriesCard from "../components/SeriesCard";
 
-const HomeSeriesSection = () => {
+const SeriesSection = () => {
   return (
     <section>
       <Card className="overflow-hidden">
@@ -40,4 +40,4 @@ const HomeSeriesSection = () => {
   );
 };
 
-export default HomeSeriesSection;
+export default SeriesSection;

@@ -6,7 +6,7 @@ import Image from "next/image";
 import { useCampusSelection } from "../../view-model/CampusSelectionContext";
 import { getNextSeriesByDay } from "@/src/shared/utils/getNextSeriesByDay";
 
-const HomeHeroSection = () => {
+const HeroSection = () => {
   const { currentCampus } = useCampusSelection();
   const nextSeriesInfo = getNextSeriesByDay(currentCampus);
 
@@ -79,4 +79,4 @@ const HomeHeroSection = () => {
   );
 };
 
-export default HomeHeroSection;
+export default HeroSection;

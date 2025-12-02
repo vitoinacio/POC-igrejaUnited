@@ -1,11 +1,13 @@
-import HomeHeroSection from "./sections/HomeHeroSection"
-import HomeSeriesSection from "./sections/HomeSeriesSection"
+import AnnouncementsSection from "./sections/AnnouncementsSection"
+import HeroSection from "./sections/HeroSection"
+import SeriesSection from "./sections/SeriesSection"
 
 const HomeView = () => {
   return (
     <div>
-      <HomeHeroSection />
-      <HomeSeriesSection />
+      <HeroSection />
+      <SeriesSection />
+      <AnnouncementsSection />
     </div>
   )
 }
