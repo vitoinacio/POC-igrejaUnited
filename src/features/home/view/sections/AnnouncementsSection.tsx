@@ -13,7 +13,7 @@ const AnnouncementsSection = () => {
   console.log(currentCampus)
 
   return (
-    <section className="flex w-full mt-10">
+    <section className="flex w-full mt-10 max-md:flex-col max-md:gap-3">
       <div className="flex flex-col gap-3 flex-[1.3]">
         <div>
           <h4 className="text-xs tracking-[0.27em] uppercase text-united-muted">
@@ -23,7 +23,7 @@ const AnnouncementsSection = () => {
             Fique por dentro do que está acontecendo
           </h3>
         </div>
-        <div className="bg-zinc-400 h-[270px] w-[90%] rounded-2xl"></div>
+        <div className="bg-zinc-400 h-60 w-[90%] max-md:w-full rounded-2xl"></div>
       </div>
       <div className="flex-1 flex flex-col gap-3">
         <h3 className="text-sm font-semibold text-united-muted uppercase tracking-[0.2em]">
