@@ -39,10 +39,7 @@ export function PageHero({
           {(primary || secondary) && (
             <div className="mt-7 flex flex-col gap-3 sm:flex-row">
               {primary && (
-                <Button
-                  size="lg"
-                  className="bg-white text-primary hover:bg-white/90"
-                >
+                <Button asChild size="lg">
                   <Link href={primary.href}>
                     {primary.label}
                     <ArrowRight className="h-4 w-4" />
@@ -50,11 +47,7 @@ export function PageHero({
                 </Button>
               )}
               {secondary && (
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="border-white/40 bg-white/10 text-white hover:bg-white/20"
-                >
+                <Button asChild size="lg" variant="outline" className="border-white/40 bg-white/10 text-white hover:bg-white/20">
                   <Link href={secondary.href}>{secondary.label}</Link>
                 </Button>
               )}

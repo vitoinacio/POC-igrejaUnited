@@ -26,7 +26,7 @@ export function EventosView() {
               description="Venha viver esse momento com a gente."
               image={item.image}
               action={
-                <Button className="w-full">
+                <Button asChild className="w-full">
                   <a href={item.calendar} download>
                     <CalendarPlus className="h-4 w-4" />
                     Adicionar à agenda
