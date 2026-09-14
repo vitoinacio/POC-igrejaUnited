@@ -1,0 +1,1 @@
+export { EscolasView } from "./view/escolas-view";

@@ -1,0 +1,1 @@
+export { UnidadesView } from "./view/unidades-view";

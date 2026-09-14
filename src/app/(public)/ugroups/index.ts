@@ -1,0 +1,1 @@
+export { UGroupsView } from "./view/ugroups-view";

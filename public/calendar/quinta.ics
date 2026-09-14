@@ -1,0 +1,12 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Igreja United//Cultos//PT-BR
+BEGIN:VEVENT
+UID:quinta@igrejaunited.local
+DTSTART;TZID=America/Sao_Paulo:20260917T200000
+DTEND;TZID=America/Sao_Paulo:20260917T220000
+RRULE:FREQ=WEEKLY;BYDAY=TH
+SUMMARY:Série mensal — Igreja United
+LOCATION:Rua Pontes Corrêa, 39 — Andaraí, Rio de Janeiro
+END:VEVENT
+END:VCALENDAR

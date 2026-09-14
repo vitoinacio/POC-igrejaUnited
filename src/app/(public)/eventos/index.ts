@@ -1,0 +1,1 @@
+export { EventosView } from "./view/eventos-view";

@@ -1,0 +1,1 @@
+export { VoluntariadoView } from "./view/voluntariado-view";

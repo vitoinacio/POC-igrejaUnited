@@ -1,0 +1,1 @@
+export { SobreView } from "./view/sobre-view";

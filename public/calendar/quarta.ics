@@ -1,0 +1,12 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Igreja United//Cultos//PT-BR
+BEGIN:VEVENT
+UID:quarta@igrejaunited.local
+DTSTART;TZID=America/Sao_Paulo:20260916T200000
+DTEND;TZID=America/Sao_Paulo:20260916T220000
+RRULE:FREQ=WEEKLY;BYDAY=WE
+SUMMARY:Sala de Oração e Cura — Igreja United
+LOCATION:Rua Pontes Corrêa, 39 — Andaraí, Rio de Janeiro
+END:VEVENT
+END:VCALENDAR

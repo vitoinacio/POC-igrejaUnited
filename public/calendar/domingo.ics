@@ -1,0 +1,12 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Igreja United//Cultos//PT-BR
+BEGIN:VEVENT
+UID:domingo@igrejaunited.local
+DTSTART;TZID=America/Sao_Paulo:20260920T180000
+DTEND;TZID=America/Sao_Paulo:20260920T200000
+RRULE:FREQ=WEEKLY;BYDAY=SU
+SUMMARY:Culto de Domingo — Igreja United
+LOCATION:Rua Pontes Corrêa, 39 — Andaraí, Rio de Janeiro
+END:VEVENT
+END:VCALENDAR
