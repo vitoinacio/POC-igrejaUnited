@@ -61,7 +61,7 @@ export function SiteFooter() {
             </span>
           </div>
           <Link
-            href="/lideres"
+            href="/login"
             className="mt-6 inline-flex items-center gap-2 text-xs text-primary/60 hover:text-primary"
           >
             <LockKeyhole className="h-4 w-4" />

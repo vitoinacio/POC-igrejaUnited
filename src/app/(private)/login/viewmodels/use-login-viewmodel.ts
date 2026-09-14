@@ -7,7 +7,7 @@ export function useLoginViewModel() {
   const router = useRouter();
   function onSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    router.push("/lideres/dashboard");
+    router.push("/dashboard");
   }
   return { onSubmit };
 }
