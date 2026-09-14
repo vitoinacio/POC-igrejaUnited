@@ -1,18 +1,13 @@
 "use client";
 
-import { useMemo, useState } from "react";
 import { CalendarDays, MapPin, UsersRound } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
-import { ugroupCategories, ugroups } from "../model/ugroups.model";
+import { useUGroupsViewModel } from "../viewmodels/use-ugroups-viewmodel";
 import { cn } from "@/lib/utils";
 
 export function UGroupExplorer() {
-  const [type, setType] = useState<string>("Todos");
-  const filtered = useMemo(
-    () => (type === "Todos" ? ugroups : ugroups.filter((group) => group.type === type)),
-    [type]
-  );
+  const { type, setType, filtered, ugroupCategories } = useUGroupsViewModel();
   return (
     <div id="encontrar">
       <div className="mb-6 flex gap-2 overflow-x-auto pb-2">

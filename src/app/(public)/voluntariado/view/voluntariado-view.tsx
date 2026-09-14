@@ -1,10 +1,10 @@
-import { CalendarHeart, Crown, Headphones, HeartHandshake, Music2, SmilePlus } from "lucide-react";
 import { PageHero } from "@/components/shared/page-hero";
 import { SectionHeading } from "@/components/shared/section-heading";
 import { Card, CardContent } from "@/components/ui/card";
-import { volunteerTeams, volunteerSteps } from "../model/volunteer.model";
+import { getVolunteerViewModel } from "../viewmodels/volunteer.viewmodel";
 
 export function VoluntariadoView() {
+  const { volunteerTeams, volunteerSteps } = getVolunteerViewModel();
   return (
     <>
       <PageHero

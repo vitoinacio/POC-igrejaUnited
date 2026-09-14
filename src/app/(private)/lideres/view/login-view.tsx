@@ -1,17 +1,12 @@
 "use client";
 
-import { FormEvent } from "react";
-import { useRouter } from "next/navigation";
+import { useLoginViewModel } from "../viewmodels/use-login-viewmodel";
 import { LockKeyhole } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
 export function LoginView() {
-  const router = useRouter();
-  function onSubmit(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-    router.push("/lideres/dashboard");
-  }
+  const { onSubmit } = useLoginViewModel();
   return (
     <section className="page-shell grid min-h-[72vh] place-items-center py-12">
       <Card className="w-full max-w-md">

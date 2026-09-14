@@ -1,12 +1,11 @@
-import { HeartHandshake, MapPin, School, UsersRound } from "lucide-react";
 import { PageHero } from "@/components/shared/page-hero";
-import { ScheduleStrip } from "@/components/shared/schedule-strip";
 import { SectionHeading } from "@/components/shared/section-heading";
 import { ImageCard } from "@/components/shared/image-card";
 import { EventCard } from "@/components/shared/event-card";
-import { quickLinks, schoolCards, weeklyEvents } from "../model/home.model";
+import { getHomeViewModel } from "../viewmodels/home.viewmodel";
 
 export function HomeView() {
+  const { quickLinks, schoolCards, weeklyEvents } = getHomeViewModel();
   return (
     <>
       <PageHero

@@ -1,11 +1,11 @@
-import { BookOpen, Footprints, UsersRound } from "lucide-react";
 import { PageHero } from "@/components/shared/page-hero";
 import { SectionHeading } from "@/components/shared/section-heading";
 import { ImageCard } from "@/components/shared/image-card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { schools, schoolValues, faqItems } from "../model/schools.model";
+import { getSchoolsViewModel } from "../viewmodels/schools.viewmodel";
 
 export function EscolasView() {
+  const { schools, schoolValues, faqItems } = getSchoolsViewModel();
   return (
     <>
       <PageHero
@@ -46,7 +46,7 @@ export function EscolasView() {
       <section id="faq" className="page-shell section-space">
         <SectionHeading eyebrow="Como começar" title="Perguntas frequentes" />
         <div className="surface px-5">
-          <Accordion type="single" collapsible>
+          <Accordion>
             {faqItems.map((item, index) => (
               <AccordionItem key={item.question} value={String(index + 1)}>
                 <AccordionTrigger>{item.question}</AccordionTrigger>

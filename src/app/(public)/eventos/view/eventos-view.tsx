@@ -3,9 +3,10 @@ import { PageHero } from "@/components/shared/page-hero";
 import { SectionHeading } from "@/components/shared/section-heading";
 import { EventCard } from "@/components/shared/event-card";
 import { Button } from "@/components/ui/button";
-import { schedules, scheduleImages, otherEvents } from "../model/events.model";
+import { getEventsViewModel } from "../viewmodels/events.viewmodel";
 
 export function EventosView() {
+  const { schedules, otherEvents } = getEventsViewModel();
   return (
     <>
       <PageHero
@@ -17,15 +18,15 @@ export function EventosView() {
       <section className="page-shell section-space">
         <SectionHeading eyebrow="Nossa agenda" title="Encontros que constroem" />
         <div className="grid gap-4 md:grid-cols-3">
-          {schedules.map((item, index) => (
+          {schedules.map((item) => (
             <EventCard
               key={item.day}
-              label={`${item.day} · ${item.time}`}
+              label={item.label}
               title={item.title}
               description="Venha viver esse momento com a gente."
-              image={scheduleImages[index]}
+              image={item.image}
               action={
-                <Button asChild className="w-full">
+                <Button className="w-full">
                   <a href={item.calendar} download>
                     <CalendarPlus className="h-4 w-4" />
                     Adicionar à agenda

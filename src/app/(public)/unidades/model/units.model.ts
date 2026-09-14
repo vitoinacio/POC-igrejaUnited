@@ -1,9 +1,4 @@
-export interface Unit {
-  name: string;
-  region: string;
-  address: string;
-  image: string;
-}
+import type { Unit } from "../types/units.types";
 
 export const units: readonly Unit[] = [
   { name: "United Andaraí", region: "Rio de Janeiro — RJ", address: "Rua Pontes Corrêa, 39 — Andaraí", image: "/images/church-building.jpg" },

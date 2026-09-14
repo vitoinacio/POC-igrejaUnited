@@ -1,24 +1,7 @@
-export interface Schedule {
-  day: string;
-  time: string;
-  title: string;
-  calendar: string;
-}
-
-export const schedules: readonly Schedule[] = [
-  { day: "Domingo", time: "18h", title: "Culto de Domingo", calendar: "/calendar/domingo.ics" },
-  { day: "Quarta", time: "20h", title: "Sala de Oração e Cura", calendar: "/calendar/quarta.ics" },
-  { day: "Quinta", time: "20h", title: "Séries mensais sobre um tema", calendar: "/calendar/quinta.ics" },
-] as const;
+import type { OtherEvent } from "../types/events.types";
 
 export const scheduleImages = ["/images/worship.jpg", "/images/prayer.jpg", "/images/preaching.jpg"] as const;
 
-export interface OtherEvent {
-  label: string;
-  title: string;
-  description: string;
-  image: string;
-}
 
 export const otherEvents: readonly OtherEvent[] = [
   { label: "Sábado · 19h", title: "Encontro de Jovens", description: "Comunhão, adoração, Palavra e novas amizades.", image: "/images/youth.jpg" },

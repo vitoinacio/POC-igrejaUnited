@@ -1,12 +1,11 @@
-import { BookOpen, Heart, Sprout, UsersRound } from "lucide-react";
 import { PageHero } from "@/components/shared/page-hero";
 import { SectionHeading } from "@/components/shared/section-heading";
 import { Card, CardContent } from "@/components/ui/card";
-import { timeline, leadership, values } from "../model/about.model";
+import { getAboutViewModel } from "../viewmodels/about.viewmodel";
 
-const iconMap = { BookOpen, UsersRound, Heart, Sprout } as const;
 
 export function SobreView() {
+  const { timeline, leadership, values } = getAboutViewModel();
   return (
     <>
       <PageHero
@@ -69,7 +68,7 @@ export function SobreView() {
         <SectionHeading eyebrow="Nossos valores" title="O que nos move" />
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {values.map((value) => {
-            const Icon = iconMap[value.icon as keyof typeof iconMap] as typeof BookOpen;
+            const Icon = value.icon;
             return (
               <Card key={value.title}>
                 <CardContent>

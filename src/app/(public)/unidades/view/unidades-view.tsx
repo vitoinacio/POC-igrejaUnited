@@ -3,9 +3,10 @@ import { Clock3, MapPin } from "lucide-react";
 import { PageHero } from "@/components/shared/page-hero";
 import { SectionHeading } from "@/components/shared/section-heading";
 import { Card, CardContent } from "@/components/ui/card";
-import { units } from "../model/units.model";
+import { getUnitsViewModel } from "../viewmodels/units.viewmodel";
 
 export function UnidadesView() {
+  const { units } = getUnitsViewModel();
   return (
     <>
       <PageHero

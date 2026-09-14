@@ -2,67 +2,44 @@
 @import "tw-animate-css";
 
 /* =========================================================
-   DARK MODE
-   ========================================================= */
-
-@custom-variant dark (&:is(.dark *));
-
-
-/* =========================================================
-   DESIGN TOKENS
+   DESIGN TOKENS - Original HSL values preserved
    ========================================================= */
 
 :root {
   --background: 198 37% 97%;
   --foreground: 198 47% 13%;
-
   --primary: 188 58% 24%;
   --primary-foreground: 0 0% 100%;
-
   --secondary: 191 39% 92%;
   --secondary-foreground: 188 58% 24%;
-
   --muted: 198 24% 94%;
   --muted-foreground: 198 14% 42%;
-
   --accent: 190 31% 88%;
   --accent-foreground: 188 58% 24%;
-
   --border: 194 24% 86%;
+  --radius: 0.625rem;
 }
 
-
 /* =========================================================
-   TAILWIND THEME
+   TAILWIND THEME (v4 syntax)
    ========================================================= */
 
 @theme inline {
-  /* Colors */
   --color-border: hsl(var(--border));
-
   --color-background: hsl(var(--background));
   --color-foreground: hsl(var(--foreground));
-
   --color-primary: hsl(var(--primary));
   --color-primary-foreground: hsl(var(--primary-foreground));
-
   --color-secondary: hsl(var(--secondary));
   --color-secondary-foreground: hsl(var(--secondary-foreground));
-
   --color-muted: hsl(var(--muted));
   --color-muted-foreground: hsl(var(--muted-foreground));
-
   --color-accent: hsl(var(--accent));
   --color-accent-foreground: hsl(var(--accent-foreground));
-
-  /* Border radius */
   --radius-xl: 1.25rem;
   --radius-2xl: 1.75rem;
-
-  /* Shadows */
-  --shadow-soft: 0 18px 55px rgba(16, 58, 67, 0.1);
+  --shadow-soft: 0 18px 55px rgba(16, 58, 67, 0.10);
 }
-
 
 /* =========================================================
    BASE
@@ -72,18 +49,14 @@
   * {
     border-color: hsl(var(--border));
   }
-
   html {
     scroll-behavior: smooth;
   }
-
   body {
-    min-height: 100vh;
     background-color: hsl(var(--background));
     color: hsl(var(--foreground));
   }
 }
-
 
 /* =========================================================
    SHARED COMPONENT UTILITIES
@@ -93,31 +66,24 @@
   .page-shell {
     @apply mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8;
   }
-
   .section-space {
     @apply py-12 sm:py-16 lg:py-20;
   }
-
   .eyebrow {
     @apply text-xs font-semibold uppercase tracking-[0.24em] text-primary/70;
   }
-
   .display-title {
     @apply font-serif text-4xl leading-[0.95] tracking-[-0.03em] sm:text-5xl lg:text-6xl;
   }
-
   .section-title {
     @apply font-serif text-3xl leading-tight tracking-[-0.02em] sm:text-4xl;
   }
-
   .body-copy {
     @apply text-sm leading-6 text-muted-foreground sm:text-base sm:leading-7;
   }
-
   .surface {
     @apply rounded-2xl border border-white/80 bg-white shadow-soft;
   }
-
   .image-overlay {
     background: linear-gradient(
       90deg,

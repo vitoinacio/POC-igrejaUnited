@@ -1,26 +1,12 @@
-import { HeartHandshake, MapPin, School, UsersRound } from "lucide-react";
-
-export interface QuickLink {
-  title: string;
-  description: string;
-  image: string;
-  href: string;
-  icon: typeof UsersRound;
-}
+import type { QuickLink, SchoolCard, EventItem } from "../types/home.types";
 
 export const quickLinks: readonly QuickLink[] = [
-  { title: "UGroups", description: "Vida em comunidade", image: "/images/community-home.jpg", href: "/ugroups", icon: UsersRound },
-  { title: "Escolas", description: "Cresça na sua fé", image: "/images/bible-study.jpg", href: "/escolas", icon: School },
-  { title: "Voluntariado", description: "Sirva com propósito", image: "/images/volunteer-team.jpg", href: "/voluntariado", icon: HeartHandshake },
-  { title: "Unidades", description: "Encontre uma perto de você", image: "/images/church-building.jpg", href: "/unidades", icon: MapPin },
+  { title: "UGroups", description: "Vida em comunidade", image: "/images/community-home.jpg", href: "/ugroups", icon: "UsersRound" },
+  { title: "Escolas", description: "Cresça na sua fé", image: "/images/bible-study.jpg", href: "/escolas", icon: "School" },
+  { title: "Voluntariado", description: "Sirva com propósito", image: "/images/volunteer-team.jpg", href: "/voluntariado", icon: "HeartHandshake" },
+  { title: "Unidades", description: "Encontre uma perto de você", image: "/images/church-building.jpg", href: "/unidades", icon: "MapPin" },
 ] as const;
 
-export interface SchoolCard {
-  title: string;
-  description: string;
-  image: string;
-  href: string;
-}
 
 export const schoolCards: readonly SchoolCard[] = [
   { title: "Primeiros Passos", description: "4 domingos para conhecer a igreja e avançar.", image: "/images/church-building.jpg", href: "/escolas" },
@@ -28,12 +14,6 @@ export const schoolCards: readonly SchoolCard[] = [
   { title: "Escola de Ministério", description: "Descubra e desenvolva seu chamado.", image: "/images/volunteer-team.jpg", href: "/escolas" },
 ] as const;
 
-export interface EventItem {
-  label: string;
-  title: string;
-  description: string;
-  image: string;
-}
 
 export const weeklyEvents: readonly EventItem[] = [
   { label: "Quinta · 20h", title: "Série mensal", description: "Ensino, Palavra e vida prática para caminhar com Jesus.", image: "/images/preaching.jpg" },
