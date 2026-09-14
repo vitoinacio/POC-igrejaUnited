@@ -1,13 +1,15 @@
 "use client";
 
-import type { FormEvent } from "react";
 import { useRouter } from "next/navigation";
+import { useCallback } from "react";
 
 export function useLoginViewModel() {
   const router = useRouter();
-  function onSubmit(event: FormEvent<HTMLFormElement>) {
+
+  const onSubmit = useCallback((event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     router.push("/dashboard");
-  }
+  }, [router]);
+
   return { onSubmit };
 }
